@@ -57,10 +57,15 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<CommonModule>МИт</CommonModule>
+			<CommonModule>МИтКлиент</CommonModule>
 			<CommonModule>МИтКС</CommonModule>
+			<CommonModule>ПодключаемыеКомандыПереопределяемый</CommonModule>
+			<Catalog>Организации</Catalog>
 			<DataProcessor>МИтПодтверждение</DataProcessor>
 			<DataProcessor>МИтХранилище</DataProcessor>
 			<DataProcessor>МИтСвойства</DataProcessor>
+			<DataProcessor>МИтПодготовкаПодтверждения</DataProcessor>
+			<DataProcessor>МИтНастройкиЗаполнения</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
