@@ -122,6 +122,11 @@
 												</Button>
 											</ChildItems>
 										</Popup>
+										<Button name="ЗаполнитьФормы" id="108">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ЗаполнитьФормы</CommandName>
+											<ExtendedTooltip name="ЗаполнитьФормыРасширеннаяПодсказка" id="109"/>
+										</Button>
 										<Button name="РедактироватьФормы" id="97">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.РедактироватьФормы</CommandName>
@@ -222,12 +227,24 @@
 									<ContextMenu name="ТаблицаСостояниеОрганизацияКонтекстноеМеню" id="21"/>
 									<ExtendedTooltip name="ТаблицаСостояниеОрганизацияРасширеннаяПодсказка" id="22"/>
 								</InputField>
-								<InputField name="ТаблицаСостояниеФизЛицо" id="23">
-									<DataPath>ТаблицаСостояние.ФизЛицо</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ТаблицаСостояниеФизЛицоКонтекстноеМеню" id="24"/>
-									<ExtendedTooltip name="ТаблицаСостояниеФизЛицоРасширеннаяПодсказка" id="25"/>
-								</InputField>
+								<ColumnGroup name="ТаблицаСостояниеГруппа1" id="106">
+									<Group>InCell</Group>
+									<ExtendedTooltip name="ТаблицаСостояниеГруппа1РасширеннаяПодсказка" id="107"/>
+									<ChildItems>
+										<InputField name="ТаблицаСостояниеФизЛицо" id="23">
+											<DataPath>ТаблицаСостояние.ФизЛицо</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаСостояниеФизЛицоКонтекстноеМеню" id="24"/>
+											<ExtendedTooltip name="ТаблицаСостояниеФизЛицоРасширеннаяПодсказка" id="25"/>
+										</InputField>
+										<InputField name="ТаблицаСостояниеСотрудник" id="103">
+											<DataPath>ТаблицаСостояние.Сотрудник</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаСостояниеСотрудникКонтекстноеМеню" id="104"/>
+											<ExtendedTooltip name="ТаблицаСостояниеСотрудникРасширеннаяПодсказка" id="105"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
 								<InputField name="ТаблицаСостояниеСтатус" id="26">
 									<DataPath>ТаблицаСостояние.Статус</DataPath>
 									<EditMode>EnterOnInput</EditMode>
@@ -399,11 +416,7 @@
 						</v8:item>
 					</Title>
 					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>0</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
 					</Type>
 				</Column>
 				<Column name="ФизЛицо" id="2">
@@ -414,11 +427,7 @@
 						</v8:item>
 					</Title>
 					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>0</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
 					</Type>
 				</Column>
 				<Column name="Статус" id="3">
@@ -677,6 +686,17 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
+				<Column name="Сотрудник" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сотрудник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 	</Attributes>
@@ -751,6 +771,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>РедактироватьФормы</Action>
+		</Command>
+		<Command name="ЗаполнитьФормы" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьФормы</Action>
 		</Command>
 	</Commands>
 </Form>
