@@ -1,34 +1,16 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
-	<DataProcessor uuid="0c45c16c-7b67-422d-be5d-0bf1b173dad8">
-		<InternalInfo>
-			<xr:GeneratedType name="DataProcessorObject.МИтПодтверждение" category="Object">
-				<xr:TypeId>8426de36-ed97-4882-9ac5-9f4e2d617b6c</xr:TypeId>
-				<xr:ValueId>0d2d5a24-5625-46c4-a525-9f31e7a39600</xr:ValueId>
-			</xr:GeneratedType>
-			<xr:GeneratedType name="DataProcessorManager.МИтПодтверждение" category="Manager">
-				<xr:TypeId>193c0a8b-b252-4fdd-adfb-0172d789876b</xr:TypeId>
-				<xr:ValueId>3579291f-9fba-4116-8704-d0c1d15c4403</xr:ValueId>
-			</xr:GeneratedType>
-		</InternalInfo>
+	<Template uuid="8def3350-262b-4394-952b-e52c4a3255c5">
 		<Properties>
-			<Name>МИтПодтверждение</Name>
+			<Name>ОбразецЗаполнения20220927</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Подтверждение (m10n reprieve)</v8:content>
+					<v8:content>Образец заполнения20220927</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<UseStandardCommands>true</UseStandardCommands>
-			<DefaultForm/>
-			<AuxiliaryForm/>
-			<IncludeHelpInContents>false</IncludeHelpInContents>
-			<ExtendedPresentation/>
-			<Explanation/>
+			<TemplateType>TextDocument</TemplateType>
 		</Properties>
-		<ChildObjects>
-			<Template>ОбразецЗаполнения20220927</Template>
-		</ChildObjects>
-	</DataProcessor>
+	</Template>
 </MetaDataObject>

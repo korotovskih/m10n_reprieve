@@ -89,7 +89,7 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Подготовить формы</v8:content>
+													<v8:content>Подготовить документы</v8:content>
 												</v8:item>
 											</Title>
 											<ToolTip>
@@ -100,6 +100,11 @@
 											</ToolTip>
 											<ExtendedTooltip name="ДействияТаблицыТаблицаСостояниеЛеваяКПРасширеннаяПодсказка" id="38"/>
 											<ChildItems>
+												<Button name="РедактироватьФормы" id="97">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.РедактироватьФормы</CommandName>
+													<ExtendedTooltip name="РедактироватьФормыРасширеннаяПодсказка" id="98"/>
+												</Button>
 												<Button name="ТаблицаСостояниеСформироватьФормы" id="39">
 													<Type>CommandBarButton</Type>
 													<CommandName>Form.Command.СформироватьФормы</CommandName>
@@ -120,17 +125,17 @@
 													<CommandName>Form.Command.СохранитьФормы</CommandName>
 													<ExtendedTooltip name="ТаблицаСостояниеСохранитьФормыРасширеннаяПодсказка" id="46"/>
 												</Button>
+												<Button name="СохранитьФорму" id="112">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.СохранитьФорму</CommandName>
+													<ExtendedTooltip name="СохранитьФормуРасширеннаяПодсказка" id="113"/>
+												</Button>
 											</ChildItems>
 										</Popup>
 										<Button name="ЗаполнитьФормы" id="108">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.ЗаполнитьФормы</CommandName>
 											<ExtendedTooltip name="ЗаполнитьФормыРасширеннаяПодсказка" id="109"/>
-										</Button>
-										<Button name="РедактироватьФормы" id="97">
-											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.РедактироватьФормы</CommandName>
-											<ExtendedTooltip name="РедактироватьФормыРасширеннаяПодсказка" id="98"/>
 										</Button>
 									</ChildItems>
 								</CommandBar>
@@ -227,35 +232,11 @@
 									<ContextMenu name="ТаблицаСостояниеОрганизацияКонтекстноеМеню" id="21"/>
 									<ExtendedTooltip name="ТаблицаСостояниеОрганизацияРасширеннаяПодсказка" id="22"/>
 								</InputField>
-								<ColumnGroup name="ТаблицаСостояниеГруппа1" id="106">
-									<Group>InCell</Group>
-									<ExtendedTooltip name="ТаблицаСостояниеГруппа1РасширеннаяПодсказка" id="107"/>
-									<ChildItems>
-										<InputField name="ТаблицаСостояниеФизЛицо" id="23">
-											<DataPath>ТаблицаСостояние.ФизЛицо</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ТаблицаСостояниеФизЛицоКонтекстноеМеню" id="24"/>
-											<ExtendedTooltip name="ТаблицаСостояниеФизЛицоРасширеннаяПодсказка" id="25"/>
-										</InputField>
-										<InputField name="ТаблицаСостояниеСотрудник" id="103">
-											<DataPath>ТаблицаСостояние.Сотрудник</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ТаблицаСостояниеСотрудникКонтекстноеМеню" id="104"/>
-											<ExtendedTooltip name="ТаблицаСостояниеСотрудникРасширеннаяПодсказка" id="105"/>
-										</InputField>
-									</ChildItems>
-								</ColumnGroup>
-								<InputField name="ТаблицаСостояниеСтатус" id="26">
-									<DataPath>ТаблицаСостояние.Статус</DataPath>
+								<InputField name="ТаблицаСостояниеСотрудник" id="103">
+									<DataPath>ТаблицаСостояние.Сотрудник</DataPath>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ТаблицаСостояниеСтатусКонтекстноеМеню" id="27"/>
-									<ExtendedTooltip name="ТаблицаСостояниеСтатусРасширеннаяПодсказка" id="28"/>
-								</InputField>
-								<InputField name="ТаблицаСостояниеСостояние" id="29">
-									<DataPath>ТаблицаСостояние.Состояние</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ТаблицаСостояниеСостояниеКонтекстноеМеню" id="30"/>
-									<ExtendedTooltip name="ТаблицаСостояниеСостояниеРасширеннаяПодсказка" id="31"/>
+									<ContextMenu name="ТаблицаСостояниеСотрудникКонтекстноеМеню" id="104"/>
+									<ExtendedTooltip name="ТаблицаСостояниеСотрудникРасширеннаяПодсказка" id="105"/>
 								</InputField>
 								<InputField name="ТаблицаСостояниеПоиск" id="34">
 									<DataPath>ТаблицаСостояние.Поиск</DataPath>
@@ -365,6 +346,43 @@
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ТаблицаСостояниеОрганизацияНаименованиеКонтекстноеМеню" id="95"/>
 											<ExtendedTooltip name="ТаблицаСостояниеОрганизацияНаименованиеРасширеннаяПодсказка" id="96"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ТаблицаСостояниеСтатусСостояние" id="110">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус документа</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица состояние статус состояние</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ShowInHeader>true</ShowInHeader>
+									<FixingInTable>Right</FixingInTable>
+									<ExtendedTooltip name="ТаблицаСостояниеСтатусСостояниеРасширеннаяПодсказка" id="111"/>
+									<ChildItems>
+										<InputField name="ТаблицаСостояниеСтатус" id="26">
+											<DataPath>ТаблицаСостояние.Статус</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<Width>10</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="ТаблицаСостояниеСтатусКонтекстноеМеню" id="27"/>
+											<ExtendedTooltip name="ТаблицаСостояниеСтатусРасширеннаяПодсказка" id="28"/>
+										</InputField>
+										<InputField name="ТаблицаСостояниеСостояние" id="29">
+											<DataPath>ТаблицаСостояние.Состояние</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<Width>20</Width>
+											<ContextMenu name="ТаблицаСостояниеСостояниеКонтекстноеМеню" id="30"/>
+											<ExtendedTooltip name="ТаблицаСостояниеСостояниеРасширеннаяПодсказка" id="31"/>
 										</InputField>
 									</ChildItems>
 								</ColumnGroup>
@@ -699,13 +717,218 @@
 				</Column>
 			</Columns>
 		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаСостояниеСтатус</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаСостояние.Статус</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Left</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Новый</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаСостояниеСтатус</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаСостояние.Статус</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">100</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Left</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отправлен</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаСостояниеСтатус</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаСостояние.Статус</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">200</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Left</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Принят</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаСостояниеСтатус</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаСостояние.Статус</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">400</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Left</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отказ</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаСостояниеСтатус</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаСостояние.Статус</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">500</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Left</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ошибка</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаСостояниеСтатус</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаСостояние.Статус</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">10</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Left</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Создан</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаСостояниеСтатус</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаСостояние.Статус</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">20</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Left</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Подписан</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
 		<Command name="СформироватьФормы" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сформировать</v8:content>
+					<v8:content>1. Сформировать</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -714,12 +937,13 @@
 					<v8:content>Сформировать формы</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Action>СформироватьФормы</Action>
 		</Command>
 		<Command name="ПодписатьФормы" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Подписать</v8:content>
+					<v8:content>2. Подписать</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -733,7 +957,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Отправить сотруднику по email</v8:content>
+					<v8:content>3. Отправить сотруднику по email</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -747,7 +971,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сохранить на диск</v8:content>
+					<v8:content>Сохранить на диск (все)</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -756,12 +980,13 @@
 					<v8:content>Сохранить формы</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Action>СохранитьФормы</Action>
 		</Command>
 		<Command name="РедактироватьФормы" id="5">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Редактировать формы</v8:content>
+					<v8:content>Редактировать</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -776,7 +1001,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Заполнить</v8:content>
+					<v8:content>Обновить</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -786,6 +1011,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗаполнитьФормы</Action>
+		</Command>
+		<Command name="СохранитьФорму" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить на диск (текущий)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьФорму</Action>
 		</Command>
 	</Commands>
 </Form>

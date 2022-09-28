@@ -146,6 +146,25 @@
 												<Event name="OnChange">НастройкаПриИзменении</Event>
 											</Events>
 										</InputField>
+										<InputField name="ОтпечатокСертификата" id="44">
+											<DataPath>ОтпечатокСертификата</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сертификат</v8:content>
+												</v8:item>
+											</Title>
+											<ChoiceButton>true</ChoiceButton>
+											<ClearButton>true</ClearButton>
+											<TextEdit>false</TextEdit>
+											<ContextMenu name="ОтпечатокСертификатаКонтекстноеМеню" id="45"/>
+											<ExtendedTooltip name="ОтпечатокСертификатаРасширеннаяПодсказка" id="46"/>
+											<Events>
+												<Event name="OnChange">НастройкаПриИзменении</Event>
+												<Event name="StartChoice">ОтпечатокСертификатаНачалоВыбора</Event>
+												<Event name="ChoiceProcessing">ОтпечатокСертификатаОбработкаВыбора</Event>
+											</Events>
+										</InputField>
 									</ChildItems>
 								</UsualGroup>
 								<UsualGroup name="ГруппаКадровик" id="42">
@@ -272,6 +291,21 @@
 				</v8:item>
 			</Title>
 			<Type/>
+		</Attribute>
+		<Attribute name="ОтпечатокСертификата" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отпечаток сертификата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
 		</Attribute>
 	</Attributes>
 </Form>
