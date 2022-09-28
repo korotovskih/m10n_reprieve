@@ -122,11 +122,6 @@
 													<CommandName>Form.Command.РазослатьФормы</CommandName>
 													<ExtendedTooltip name="ТаблицаСостояниеРазослатьФормыРасширеннаяПодсказка" id="44"/>
 												</Button>
-												<Button name="ОткрытьФорму" id="114">
-													<Type>CommandBarButton</Type>
-													<CommandName>Form.Command.ОткрытьФормуДокумента</CommandName>
-													<ExtendedTooltip name="ОткрытьФормуРасширеннаяПодсказка" id="115"/>
-												</Button>
 												<Button name="ТаблицаСостояниеСохранитьФормы" id="45">
 													<Type>CommandBarButton</Type>
 													<CommandName>Form.Command.СохранитьФормы</CommandName>
@@ -136,6 +131,11 @@
 													<Type>CommandBarButton</Type>
 													<CommandName>Form.Command.СохранитьФорму</CommandName>
 													<ExtendedTooltip name="СохранитьФормуРасширеннаяПодсказка" id="113"/>
+												</Button>
+												<Button name="ОткрытьФормуДокумента" id="124">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ОткрытьФормуДокумента</CommandName>
+													<ExtendedTooltip name="ОткрытьФормуДокументаРасширеннаяПодсказка" id="125"/>
 												</Button>
 											</ChildItems>
 										</Popup>
@@ -1118,7 +1118,22 @@
 			</ToolTip>
 			<Action>СохранитьФорму</Action>
 		</Command>
-		<Command name="ОткрытьФормуДокумента" id="8">
+		<Command name="УстановитьОбновление" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить обновление</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить обновление</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьОбновление</Action>
+		</Command>
+		<Command name="ОткрытьФормуДокумента" id="9">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
