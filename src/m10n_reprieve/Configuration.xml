@@ -46,8 +46,11 @@
 			<NamePrefix>МИт</NamePrefix>
 			<ConfigurationExtensionCompatibilityMode>Version8_3_14</ConfigurationExtensionCompatibilityMode>
 			<ScriptVariant>Russian</ScriptVariant>
+			<DefaultRoles>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.МИтОсновнаяРоль</xr:Item>
+			</DefaultRoles>
 			<Vendor>https://github.com/korotovskih/m10n_reprieve</Vendor>
-			<Version>0.0.0</Version>
+			<Version>1.0.1</Version>
 			<BriefInformation/>
 			<DetailedInformation/>
 			<Copyright/>
@@ -57,6 +60,7 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>Администрирование</Subsystem>
+			<Role>МИтОсновнаяРоль</Role>
 			<CommonModule>МИт</CommonModule>
 			<CommonModule>МИтВсПовтИсп</CommonModule>
 			<CommonModule>МИтКлиент</CommonModule>

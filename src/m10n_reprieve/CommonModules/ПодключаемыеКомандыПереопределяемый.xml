@@ -6,12 +6,6 @@
 			<Name>ПодключаемыеКомандыПереопределяемый</Name>
 			<Comment/>
 			<ObjectBelonging>Adopted</ObjectBelonging>
-			<Global>false</Global>
-			<ClientManagedApplication>false</ClientManagedApplication>
-			<Server>true</Server>
-			<ExternalConnection>true</ExternalConnection>
-			<ClientOrdinaryApplication>true</ClientOrdinaryApplication>
-			<ServerCall>false</ServerCall>
 		</Properties>
 	</CommonModule>
 </MetaDataObject>
