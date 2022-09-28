@@ -120,6 +120,11 @@
 													<CommandName>Form.Command.РазослатьФормы</CommandName>
 													<ExtendedTooltip name="ТаблицаСостояниеРазослатьФормыРасширеннаяПодсказка" id="44"/>
 												</Button>
+												<Button name="ОткрытьФорму" id="114">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ОткрытьФормуДокумента</CommandName>
+													<ExtendedTooltip name="ОткрытьФормуРасширеннаяПодсказка" id="115"/>
+												</Button>
 												<Button name="ТаблицаСостояниеСохранитьФормы" id="45">
 													<Type>CommandBarButton</Type>
 													<CommandName>Form.Command.СохранитьФормы</CommandName>
@@ -1028,6 +1033,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СохранитьФорму</Action>
+		</Command>
+		<Command name="ОткрытьФормуДокумента" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть форму </v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть форму документа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьФормуДокумента</Action>
 		</Command>
 	</Commands>
 </Form>
