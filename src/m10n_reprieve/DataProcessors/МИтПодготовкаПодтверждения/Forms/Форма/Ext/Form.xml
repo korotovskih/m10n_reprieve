@@ -319,6 +319,7 @@
 								<ExtendedTooltip name="ТаблицаСостояниеУправлениеПоискомРасширеннаяПодсказка" id="19"/>
 							</SearchControlAddition>
 							<Events>
+								<Event name="Selection">ТаблицаСостояниеВыбор</Event>
 								<Event name="BeforeAddRow">ТаблицаСостояниеПередНачаломДобавления</Event>
 								<Event name="BeforeDeleteRow">ТаблицаСостояниеПередУдалением</Event>
 							</Events>
@@ -406,30 +407,6 @@
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ТаблицаСостояниеСотрудникСНИЛСКонтекстноеМеню" id="80"/>
 											<ExtendedTooltip name="ТаблицаСостояниеСотрудникСНИЛСРасширеннаяПодсказка" id="81"/>
-										</InputField>
-										<InputField name="ТаблицаСостояниеТекстПодтверждение" id="82">
-											<DataPath>ТаблицаСостояние.ТекстПодтверждение</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ТаблицаСостояниеТекстПодтверждениеКонтекстноеМеню" id="83"/>
-											<ExtendedTooltip name="ТаблицаСостояниеТекстПодтверждениеРасширеннаяПодсказка" id="84"/>
-										</InputField>
-										<InputField name="ТаблицаСостояниеТекстПредоставлениеПрава" id="85">
-											<DataPath>ТаблицаСостояние.ТекстПредоставлениеПрава</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ТаблицаСостояниеТекстПредоставлениеПраваКонтекстноеМеню" id="86"/>
-											<ExtendedTooltip name="ТаблицаСостояниеТекстПредоставлениеПраваРасширеннаяПодсказка" id="87"/>
-										</InputField>
-										<InputField name="ТаблицаСостояниеТекстПредупреждениеОбОтветсвенности" id="88">
-											<DataPath>ТаблицаСостояние.ТекстПредупреждениеОбОтветсвенности</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ТаблицаСостояниеТекстПредупреждениеОбОтветсвенностиКонтекстноеМеню" id="89"/>
-											<ExtendedTooltip name="ТаблицаСостояниеТекстПредупреждениеОбОтветсвенностиРасширеннаяПодсказка" id="90"/>
-										</InputField>
-										<InputField name="ТаблицаСостояниеТексПодписиГенДирИлиИспОрган" id="91">
-											<DataPath>ТаблицаСостояние.ТексПодписиГенДирИлиИспОрган</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ТаблицаСостояниеТексПодписиГенДирИлиИспОрганКонтекстноеМеню" id="92"/>
-											<ExtendedTooltip name="ТаблицаСостояниеТексПодписиГенДирИлиИспОрганРасширеннаяПодсказка" id="93"/>
 										</InputField>
 										<InputField name="ТаблицаСостояниеОрганизацияНаименование" id="94">
 											<DataPath>ТаблицаСостояние.ОрганизацияНаименование</DataPath>
