@@ -4,6 +4,7 @@
 	<CommandBarLocation>None</CommandBarLocation>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -83,6 +84,7 @@
 											<v8:content>Таблица состояние левая КП</v8:content>
 										</v8:item>
 									</ToolTip>
+									<HorizontalStretch>false</HorizontalStretch>
 									<ExtendedTooltip name="ТаблицаСостояниеЛеваяКПРасширеннаяПодсказка" id="50"/>
 									<ChildItems>
 										<Popup name="ДействияТаблицыТаблицаСостояниеЛеваяКП" id="37">
@@ -132,13 +134,86 @@
 												</Button>
 											</ChildItems>
 										</Popup>
-										<Button name="ЗаполнитьФормы" id="108">
-											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.ЗаполнитьФормы</CommandName>
-											<ExtendedTooltip name="ЗаполнитьФормыРасширеннаяПодсказка" id="109"/>
-										</Button>
 									</ChildItems>
 								</CommandBar>
+								<Pages name="ПанелиКнопок" id="114">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Панели кнопок</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Панели кнопок</v8:content>
+										</v8:item>
+									</ToolTip>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="ПанелиКнопокРасширеннаяПодсказка" id="115"/>
+									<ChildItems>
+										<Page name="ГруппаНет" id="118">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа нет</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа нет</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ГруппаНетРасширеннаяПодсказка" id="119"/>
+											<ChildItems>
+												<Button name="ЗаполнитьФормы" id="108">
+													<Type>UsualButton</Type>
+													<Width>10</Width>
+													<CommandName>Form.Command.ЗаполнитьФормы</CommandName>
+													<ExtendedTooltip name="ЗаполнитьФормыРасширеннаяПодсказка" id="109"/>
+												</Button>
+											</ChildItems>
+										</Page>
+										<Page name="ГруппаЕстьОбновление" id="116">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа есть обновление</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа есть обновление</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<ExtendedTooltip name="ГруппаЕстьОбновлениеРасширеннаяПодсказка" id="117"/>
+											<ChildItems>
+												<Button name="ЗаполнитьФормы1" id="120">
+													<Type>UsualButton</Type>
+													<Width>10</Width>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<CommandName>Form.Command.ЗаполнитьФормы</CommandName>
+													<ExtendedTooltip name="ЗаполнитьФормы1РасширеннаяПодсказка" id="121"/>
+												</Button>
+												<Button name="УстановитьОбновление" id="122">
+													<Type>UsualButton</Type>
+													<DefaultButton>true</DefaultButton>
+													<CommandName>Form.Command.УстановитьОбновление</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Новая версия, попробовать!</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="УстановитьОбновлениеРасширеннаяПодсказка" id="123"/>
+												</Button>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
 								<CommandBar name="ТаблицаСостояниеПраваяКП" id="32">
 									<Title>
 										<v8:item>
@@ -717,6 +792,15 @@
 				</Column>
 			</Columns>
 		</Attribute>
+		<Attribute name="ПоследняяВерсия" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последняя версия</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
 				<dcsset:selection>
@@ -1028,6 +1112,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СохранитьФорму</Action>
+		</Command>
+		<Command name="УстановитьОбновление" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить обновление</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить обновление</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьОбновление</Action>
 		</Command>
 	</Commands>
 </Form>
