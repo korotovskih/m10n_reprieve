@@ -59,14 +59,16 @@
 			<Subsystem>Администрирование</Subsystem>
 			<CommonModule>МИт</CommonModule>
 			<CommonModule>МИтКлиент</CommonModule>
+			<CommonModule>МИтКоннекторHTTP</CommonModule>
 			<CommonModule>МИтКС</CommonModule>
 			<CommonModule>ПодключаемыеКомандыПереопределяемый</CommonModule>
 			<Catalog>Организации</Catalog>
-			<DataProcessor>МИтПодтверждение</DataProcessor>
-			<DataProcessor>МИтХранилище</DataProcessor>
-			<DataProcessor>МИтСвойства</DataProcessor>
-			<DataProcessor>МИтПодготовкаПодтверждения</DataProcessor>
 			<DataProcessor>МИтНастройкиЗаполнения</DataProcessor>
+			<DataProcessor>МИтОбслуживание</DataProcessor>
+			<DataProcessor>МИтПодготовкаПодтверждения</DataProcessor>
+			<DataProcessor>МИтПодтверждение</DataProcessor>
+			<DataProcessor>МИтСвойства</DataProcessor>
+			<DataProcessor>МИтХранилище</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
