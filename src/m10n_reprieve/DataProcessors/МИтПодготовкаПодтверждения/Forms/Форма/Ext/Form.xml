@@ -952,6 +952,7 @@
 					<v8:content>Подписать формы</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Action>ПодписатьФормы</Action>
 		</Command>
 		<Command name="РазослатьФормы" id="3">
 			<Title>
@@ -966,6 +967,7 @@
 					<v8:content>Разослать формы</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Action>РазослатьФормы</Action>
 		</Command>
 		<Command name="СохранитьФормы" id="4">
 			<Title>
