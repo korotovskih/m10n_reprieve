@@ -58,6 +58,7 @@
 			<Language>Русский</Language>
 			<Subsystem>Администрирование</Subsystem>
 			<CommonModule>МИт</CommonModule>
+			<CommonModule>МИтВсПовтИсп</CommonModule>
 			<CommonModule>МИтКлиент</CommonModule>
 			<CommonModule>МИтКоннекторHTTP</CommonModule>
 			<CommonModule>МИтКС</CommonModule>
