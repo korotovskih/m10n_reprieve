@@ -27,6 +27,8 @@
 			<ExtendedPresentation/>
 			<Explanation/>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Template>ОбразецЗаполнения20220927</Template>
+		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>

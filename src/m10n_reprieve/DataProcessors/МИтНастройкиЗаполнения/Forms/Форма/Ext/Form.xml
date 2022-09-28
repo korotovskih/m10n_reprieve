@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ЭкраныФормы" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Экраны формы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Экраны формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="ЭкраныФормыРасширеннаяПодсказка" id="25"/>
+			<ChildItems>
+				<Page name="ЭкранВыборОрганизации" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Экран выбор организации</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Экран выбор организации</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЭкранВыборОрганизацииРасширеннаяПодсказка" id="29"/>
+					<ChildItems>
+						<InputField name="Организация" id="30">
+							<DataPath>Организация</DataPath>
+							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="32"/>
+							<Events>
+								<Event name="OnChange">ОрганизацияПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ЭкранНастройки" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Экран настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Экран настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЭкранНастройкиРасширеннаяПодсказка" id="34"/>
+					<ChildItems>
+						<InputField name="Организация1" id="37">
+							<DataPath>Организация</DataPath>
+							<ContextMenu name="Организация1КонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="Организация1РасширеннаяПодсказка" id="39"/>
+							<Events>
+								<Event name="OnChange">ОрганизацияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<UsualGroup name="ГруппаНастройки" id="35">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="36"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаДиректора" id="40">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Директор</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа директора</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<ExtendedTooltip name="ГруппаДиректораРасширеннаяПодсказка" id="41"/>
+									<ChildItems>
+										<InputField name="ГенДирФИО" id="1">
+											<DataPath>ГенДирФИО</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ФИО</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ГенДирФИОКонтекстноеМеню" id="2"/>
+											<ExtendedTooltip name="ГенДирФИОРасширеннаяПодсказка" id="3"/>
+											<Events>
+												<Event name="OnChange">НастройкаПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ГенДирСНИЛС" id="10">
+											<DataPath>ГенДирСНИЛС</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>СНИЛС</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ГенДирСНИЛСКонтекстноеМеню" id="11"/>
+											<ExtendedTooltip name="ГенДирСНИЛСРасширеннаяПодсказка" id="12"/>
+											<Events>
+												<Event name="OnChange">НастройкаПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="МобТелефонГенДирИлиИспОрган" id="4">
+											<DataPath>МобТелефонГенДирИлиИспОрган</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Телефон</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="МобТелефонГенДирИлиИспОрганКонтекстноеМеню" id="5"/>
+											<ExtendedTooltip name="МобТелефонГенДирИлиИспОрганРасширеннаяПодсказка" id="6"/>
+											<Events>
+												<Event name="OnChange">НастройкаПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ОтпечатокСертификата" id="44">
+											<DataPath>ОтпечатокСертификата</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сертификат</v8:content>
+												</v8:item>
+											</Title>
+											<ChoiceButton>true</ChoiceButton>
+											<ClearButton>true</ClearButton>
+											<TextEdit>false</TextEdit>
+											<ContextMenu name="ОтпечатокСертификатаКонтекстноеМеню" id="45"/>
+											<ExtendedTooltip name="ОтпечатокСертификатаРасширеннаяПодсказка" id="46"/>
+											<Events>
+												<Event name="OnChange">НастройкаПриИзменении</Event>
+												<Event name="StartChoice">ОтпечатокСертификатаНачалоВыбора</Event>
+												<Event name="ChoiceProcessing">ОтпечатокСертификатаОбработкаВыбора</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаКадровик" id="42">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Кадровик</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа кадровик</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаКадровикРасширеннаяПодсказка" id="43"/>
+									<ChildItems>
+										<InputField name="МобТелефонОтветсвенногоКадры" id="7">
+											<DataPath>МобТелефонОтветсвенногоКадры</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Телефон</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="МобТелефонОтветсвенногоКадрыКонтекстноеМеню" id="8"/>
+											<ExtendedTooltip name="МобТелефонОтветсвенногоКадрыРасширеннаяПодсказка" id="9"/>
+											<Events>
+												<Event name="OnChange">НастройкаПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.МИтНастройкиЗаполнения</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="МобТелефонГенДирИлиИспОрган" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Моб телефон ген дир или исп орган</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГенДирФИО" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ген дир ФИО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГенДирСНИЛС" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ген дир СНИЛС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МобТелефонОтветсвенногоКадры" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Моб телефон ответсвенного кадры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Организация" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КартаСвойств" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Карта свойств</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ОтпечатокСертификата" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отпечаток сертификата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

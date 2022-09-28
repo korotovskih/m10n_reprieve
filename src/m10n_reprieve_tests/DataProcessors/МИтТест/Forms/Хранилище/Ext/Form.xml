@@ -1625,5 +1625,20 @@ IMjs/z0iwe7w6PEiIM7y9+Xx8uLuPSLD5e7w4+jl4uj3Ii8+DQoJCTwvz+7k7+jx
 			</ToolTip>
 			<Action>ЗаполнитьОписаниеПодтверждения</Action>
 		</Command>
+		<Command name="ПодписаниеДД" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписание ДД</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписание ДД</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодписаниеДД</Action>
+		</Command>
 	</Commands>
 </Form>

@@ -32,6 +32,7 @@
 			<Form>Отладка</Form>
 			<Form>Хранилище</Form>
 			<Form>Подтверждение</Form>
+			<Form>Обслуживание</Form>
 			<Template>ОбразецЗаполнения20220927</Template>
 		</ChildObjects>
 	</DataProcessor>
