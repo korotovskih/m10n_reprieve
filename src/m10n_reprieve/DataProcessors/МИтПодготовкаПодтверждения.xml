@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
-	<DataProcessor uuid="0c45c16c-7b67-422d-be5d-0bf1b173dad8">
+	<DataProcessor uuid="3ca58cf6-96e6-4ea9-bb6a-0d7b7cd8598b">
 		<InternalInfo>
-			<xr:GeneratedType name="DataProcessorObject.МИтПодтверждение" category="Object">
-				<xr:TypeId>8426de36-ed97-4882-9ac5-9f4e2d617b6c</xr:TypeId>
-				<xr:ValueId>0d2d5a24-5625-46c4-a525-9f31e7a39600</xr:ValueId>
+			<xr:GeneratedType name="DataProcessorObject.МИтПодготовкаПодтверждения" category="Object">
+				<xr:TypeId>e31f6cf5-1e6c-4856-bfba-ce5b0b520774</xr:TypeId>
+				<xr:ValueId>c08e9e27-a08d-4815-8b49-078c1ec95259</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DataProcessorManager.МИтПодтверждение" category="Manager">
-				<xr:TypeId>193c0a8b-b252-4fdd-adfb-0172d789876b</xr:TypeId>
-				<xr:ValueId>3579291f-9fba-4116-8704-d0c1d15c4403</xr:ValueId>
+			<xr:GeneratedType name="DataProcessorManager.МИтПодготовкаПодтверждения" category="Manager">
+				<xr:TypeId>e9f9b417-1dda-4026-8594-bb42bd348504</xr:TypeId>
+				<xr:ValueId>a03fc9d9-70be-4e61-a9e8-eab1aec803ac</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>МИтПодтверждение</Name>
+			<Name>МИтПодготовкаПодтверждения</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Подтверждение (m10n reprieve)</v8:content>
+					<v8:content>Подготовка подтверждения (m10n reprieve)</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
-			<DefaultForm/>
+			<DefaultForm>DataProcessor.МИтПодготовкаПодтверждения.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<ExtendedPresentation/>
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Template>ОбразецЗаполнения20220927</Template>
+			<Form>Форма</Form>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>

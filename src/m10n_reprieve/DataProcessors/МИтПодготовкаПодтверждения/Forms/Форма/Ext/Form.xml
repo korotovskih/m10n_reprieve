@@ -1,0 +1,1033 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ЭкраныФормы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Экраны формы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Экраны формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="ЭкраныФормыРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Page name="ЭкранВыбора" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Экран выбора</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Экран выбора</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЭкранВыбораРасширеннаяПодсказка" id="4"/>
+				</Page>
+				<Page name="ЭкранСостояние" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Экран состояние</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Экран состояние</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЭкранСостояниеРасширеннаяПодсказка" id="6"/>
+					<ChildItems>
+						<UsualGroup name="ТаблицаСостояниеКП" id="47">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Таблица состояние КП</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Таблица состояние КП</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ТаблицаСостояниеКПРасширеннаяПодсказка" id="48"/>
+							<ChildItems>
+								<CommandBar name="ТаблицаСостояниеЛеваяКП" id="49">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица состояние левая КП</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица состояние левая КП</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ТаблицаСостояниеЛеваяКПРасширеннаяПодсказка" id="50"/>
+									<ChildItems>
+										<Popup name="ДействияТаблицыТаблицаСостояниеЛеваяКП" id="37">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Подготовить документы</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Действия таблицы таблица состояние левая КП</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ДействияТаблицыТаблицаСостояниеЛеваяКПРасширеннаяПодсказка" id="38"/>
+											<ChildItems>
+												<Button name="РедактироватьФормы" id="97">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.РедактироватьФормы</CommandName>
+													<ExtendedTooltip name="РедактироватьФормыРасширеннаяПодсказка" id="98"/>
+												</Button>
+												<Button name="ТаблицаСостояниеСформироватьФормы" id="39">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.СформироватьФормы</CommandName>
+													<ExtendedTooltip name="ТаблицаСостояниеСформироватьФормыРасширеннаяПодсказка" id="40"/>
+												</Button>
+												<Button name="ТаблицаСостояниеПодписатьФормы" id="41">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ПодписатьФормы</CommandName>
+													<ExtendedTooltip name="ТаблицаСостояниеПодписатьФормыРасширеннаяПодсказка" id="42"/>
+												</Button>
+												<Button name="ТаблицаСостояниеРазослатьФормы" id="43">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.РазослатьФормы</CommandName>
+													<ExtendedTooltip name="ТаблицаСостояниеРазослатьФормыРасширеннаяПодсказка" id="44"/>
+												</Button>
+												<Button name="ТаблицаСостояниеСохранитьФормы" id="45">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.СохранитьФормы</CommandName>
+													<ExtendedTooltip name="ТаблицаСостояниеСохранитьФормыРасширеннаяПодсказка" id="46"/>
+												</Button>
+												<Button name="СохранитьФорму" id="112">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.СохранитьФорму</CommandName>
+													<ExtendedTooltip name="СохранитьФормуРасширеннаяПодсказка" id="113"/>
+												</Button>
+											</ChildItems>
+										</Popup>
+										<Button name="ЗаполнитьФормы" id="108">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ЗаполнитьФормы</CommandName>
+											<ExtendedTooltip name="ЗаполнитьФормыРасширеннаяПодсказка" id="109"/>
+										</Button>
+									</ChildItems>
+								</CommandBar>
+								<CommandBar name="ТаблицаСостояниеПраваяКП" id="32">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица состояние правая КП</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица состояние правая КП</v8:content>
+										</v8:item>
+									</ToolTip>
+									<CommandSource>Item.ТаблицаСостояние</CommandSource>
+									<ExtendedTooltip name="ТаблицаСостояниеПраваяКПРасширеннаяПодсказка" id="33"/>
+									<ChildItems>
+										<Popup name="КомандыФормыТаблицаСостояниеПраваяКП" id="51">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Подготовка подтверждения</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Команды формы таблица состояние правая КП</v8:content>
+												</v8:item>
+											</ToolTip>
+											<CommandSource>Form</CommandSource>
+											<ExtendedTooltip name="КомандыФормыТаблицаСостояниеПраваяКПРасширеннаяПодсказка" id="52"/>
+										</Popup>
+										<Button name="ТаблицаСостояниеОбработкаМИтНастройкиЗаполненияНастройкиЗаполнения" id="101">
+											<Type>CommandBarButton</Type>
+											<CommandName>DataProcessor.МИтНастройкиЗаполнения.Command.НастройкиЗаполнения</CommandName>
+											<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+											<ExtendedTooltip name="ТаблицаСостояниеОбработкаМИтНастройкиЗаполненияНастройкиЗаполненияРасширеннаяПодсказка" id="102"/>
+										</Button>
+									</ChildItems>
+								</CommandBar>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ТаблицаСостояние" id="7">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ReadOnly>true</ReadOnly>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТаблицаСостояние</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаСостояниеКонтекстноеМеню" id="8"/>
+							<AutoCommandBar name="ТаблицаСостояниеКоманднаяПанель" id="9"/>
+							<ExtendedTooltip name="ТаблицаСостояниеРасширеннаяПодсказка" id="10"/>
+							<SearchStringAddition name="ТаблицаСостояниеСтрокаПоиска" id="11">
+								<AdditionSource>
+									<Item>ТаблицаСостояние</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаСостояниеСтрокаПоискаКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="ТаблицаСостояниеСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаСостояниеСостояниеПросмотра" id="14">
+								<AdditionSource>
+									<Item>ТаблицаСостояние</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаСостояниеСостояниеПросмотраКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="ТаблицаСостояниеСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаСостояниеУправлениеПоиском" id="17">
+								<AdditionSource>
+									<Item>ТаблицаСостояние</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаСостояниеУправлениеПоискомКонтекстноеМеню" id="18"/>
+								<ExtendedTooltip name="ТаблицаСостояниеУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ТаблицаСостояниеОрганизация" id="20">
+									<DataPath>ТаблицаСостояние.Организация</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСостояниеОрганизацияКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="ТаблицаСостояниеОрганизацияРасширеннаяПодсказка" id="22"/>
+								</InputField>
+								<InputField name="ТаблицаСостояниеСотрудник" id="103">
+									<DataPath>ТаблицаСостояние.Сотрудник</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСостояниеСотрудникКонтекстноеМеню" id="104"/>
+									<ExtendedTooltip name="ТаблицаСостояниеСотрудникРасширеннаяПодсказка" id="105"/>
+								</InputField>
+								<InputField name="ТаблицаСостояниеПоиск" id="34">
+									<DataPath>ТаблицаСостояние.Поиск</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСостояниеПоискКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="ТаблицаСостояниеПоискРасширеннаяПодсказка" id="36"/>
+								</InputField>
+								<ColumnGroup name="ТаблицаСостояниеФорма" id="53">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица состояние форма</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица состояние форма</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ExtendedTooltip name="ТаблицаСостояниеФормаРасширеннаяПодсказка" id="54"/>
+									<ChildItems>
+										<InputField name="ТаблицаСостояниеОрганизацияИНН" id="55">
+											<DataPath>ТаблицаСостояние.ОрганизацияИНН</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаСостояниеОрганизацияИННКонтекстноеМеню" id="56"/>
+											<ExtendedTooltip name="ТаблицаСостояниеОрганизацияИННРасширеннаяПодсказка" id="57"/>
+										</InputField>
+										<InputField name="ТаблицаСостояниеМобТелефонОтветсвенногоКадры" id="58">
+											<DataPath>ТаблицаСостояние.МобТелефонОтветсвенногоКадры</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаСостояниеМобТелефонОтветсвенногоКадрыКонтекстноеМеню" id="59"/>
+											<ExtendedTooltip name="ТаблицаСостояниеМобТелефонОтветсвенногоКадрыРасширеннаяПодсказка" id="60"/>
+										</InputField>
+										<InputField name="ТаблицаСостояниеМобТелефонГенДирИлиИспОрган" id="61">
+											<DataPath>ТаблицаСостояние.МобТелефонГенДирИлиИспОрган</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаСостояниеМобТелефонГенДирИлиИспОрганКонтекстноеМеню" id="62"/>
+											<ExtendedTooltip name="ТаблицаСостояниеМобТелефонГенДирИлиИспОрганРасширеннаяПодсказка" id="63"/>
+										</InputField>
+										<InputField name="ТаблицаСостояниеГенДирФИО" id="64">
+											<DataPath>ТаблицаСостояние.ГенДирФИО</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаСостояниеГенДирФИОКонтекстноеМеню" id="65"/>
+											<ExtendedTooltip name="ТаблицаСостояниеГенДирФИОРасширеннаяПодсказка" id="66"/>
+										</InputField>
+										<InputField name="ТаблицаСостояниеГенДирСНИЛС" id="67">
+											<DataPath>ТаблицаСостояние.ГенДирСНИЛС</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаСостояниеГенДирСНИЛСКонтекстноеМеню" id="68"/>
+											<ExtendedTooltip name="ТаблицаСостояниеГенДирСНИЛСРасширеннаяПодсказка" id="69"/>
+										</InputField>
+										<InputField name="ТаблицаСостояниеСотрудникФИО" id="70">
+											<DataPath>ТаблицаСостояние.СотрудникФИО</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаСостояниеСотрудникФИОКонтекстноеМеню" id="71"/>
+											<ExtendedTooltip name="ТаблицаСостояниеСотрудникФИОРасширеннаяПодсказка" id="72"/>
+										</InputField>
+										<InputField name="ТаблицаСостояниеСотрудникСерияПаспорта" id="73">
+											<DataPath>ТаблицаСостояние.СотрудникСерияПаспорта</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаСостояниеСотрудникСерияПаспортаКонтекстноеМеню" id="74"/>
+											<ExtendedTooltip name="ТаблицаСостояниеСотрудникСерияПаспортаРасширеннаяПодсказка" id="75"/>
+										</InputField>
+										<InputField name="ТаблицаСостояниеСотрудникНомерПаспорта" id="76">
+											<DataPath>ТаблицаСостояние.СотрудникНомерПаспорта</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаСостояниеСотрудникНомерПаспортаКонтекстноеМеню" id="77"/>
+											<ExtendedTooltip name="ТаблицаСостояниеСотрудникНомерПаспортаРасширеннаяПодсказка" id="78"/>
+										</InputField>
+										<InputField name="ТаблицаСостояниеСотрудникСНИЛС" id="79">
+											<DataPath>ТаблицаСостояние.СотрудникСНИЛС</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаСостояниеСотрудникСНИЛСКонтекстноеМеню" id="80"/>
+											<ExtendedTooltip name="ТаблицаСостояниеСотрудникСНИЛСРасширеннаяПодсказка" id="81"/>
+										</InputField>
+										<InputField name="ТаблицаСостояниеТекстПодтверждение" id="82">
+											<DataPath>ТаблицаСостояние.ТекстПодтверждение</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаСостояниеТекстПодтверждениеКонтекстноеМеню" id="83"/>
+											<ExtendedTooltip name="ТаблицаСостояниеТекстПодтверждениеРасширеннаяПодсказка" id="84"/>
+										</InputField>
+										<InputField name="ТаблицаСостояниеТекстПредоставлениеПрава" id="85">
+											<DataPath>ТаблицаСостояние.ТекстПредоставлениеПрава</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаСостояниеТекстПредоставлениеПраваКонтекстноеМеню" id="86"/>
+											<ExtendedTooltip name="ТаблицаСостояниеТекстПредоставлениеПраваРасширеннаяПодсказка" id="87"/>
+										</InputField>
+										<InputField name="ТаблицаСостояниеТекстПредупреждениеОбОтветсвенности" id="88">
+											<DataPath>ТаблицаСостояние.ТекстПредупреждениеОбОтветсвенности</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаСостояниеТекстПредупреждениеОбОтветсвенностиКонтекстноеМеню" id="89"/>
+											<ExtendedTooltip name="ТаблицаСостояниеТекстПредупреждениеОбОтветсвенностиРасширеннаяПодсказка" id="90"/>
+										</InputField>
+										<InputField name="ТаблицаСостояниеТексПодписиГенДирИлиИспОрган" id="91">
+											<DataPath>ТаблицаСостояние.ТексПодписиГенДирИлиИспОрган</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаСостояниеТексПодписиГенДирИлиИспОрганКонтекстноеМеню" id="92"/>
+											<ExtendedTooltip name="ТаблицаСостояниеТексПодписиГенДирИлиИспОрганРасширеннаяПодсказка" id="93"/>
+										</InputField>
+										<InputField name="ТаблицаСостояниеОрганизацияНаименование" id="94">
+											<DataPath>ТаблицаСостояние.ОрганизацияНаименование</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаСостояниеОрганизацияНаименованиеКонтекстноеМеню" id="95"/>
+											<ExtendedTooltip name="ТаблицаСостояниеОрганизацияНаименованиеРасширеннаяПодсказка" id="96"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ТаблицаСостояниеСтатусСостояние" id="110">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус документа</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица состояние статус состояние</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ShowInHeader>true</ShowInHeader>
+									<FixingInTable>Right</FixingInTable>
+									<ExtendedTooltip name="ТаблицаСостояниеСтатусСостояниеРасширеннаяПодсказка" id="111"/>
+									<ChildItems>
+										<InputField name="ТаблицаСостояниеСтатус" id="26">
+											<DataPath>ТаблицаСостояние.Статус</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<Width>10</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="ТаблицаСостояниеСтатусКонтекстноеМеню" id="27"/>
+											<ExtendedTooltip name="ТаблицаСостояниеСтатусРасширеннаяПодсказка" id="28"/>
+										</InputField>
+										<InputField name="ТаблицаСостояниеСостояние" id="29">
+											<DataPath>ТаблицаСостояние.Состояние</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<Width>20</Width>
+											<ContextMenu name="ТаблицаСостояниеСостояниеКонтекстноеМеню" id="30"/>
+											<ExtendedTooltip name="ТаблицаСостояниеСостояниеРасширеннаяПодсказка" id="31"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ЭкранНастройки" id="99">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Экран настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Экран настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЭкранНастройкиРасширеннаяПодсказка" id="100"/>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.МИтПодготовкаПодтверждения</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТаблицаСостояние" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица состояние</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Организация" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="ФизЛицо" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Физ лицо</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Статус" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Состояние" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>1000</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Поиск" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиск</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОрганизацияНаименование" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОрганизацияИНН" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация ИНН</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="МобТелефонОтветсвенногоКадры" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Моб телефон ответсвенного кадры</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="МобТелефонГенДирИлиИспОрган" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Моб телефон ген дир или исп орган</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ГенДирФИО" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ген дир ФИО</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ГенДирСНИЛС" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ген дир СНИЛС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СотрудникФИО" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сотрудник ФИО</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СотрудникСерияПаспорта" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сотрудник серия паспорта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СотрудникНомерПаспорта" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сотрудник номер паспорта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СотрудникСНИЛС" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сотрудник СНИЛС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТекстПодтверждение" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст подтверждение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТекстПредоставлениеПрава" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст предоставление права</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТекстПредупреждениеОбОтветсвенности" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст предупреждение об ответсвенности</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТексПодписиГенДирИлиИспОрган" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текс подписи ген дир или исп орган</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Сотрудник" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сотрудник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаСостояниеСтатус</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаСостояние.Статус</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Left</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Новый</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаСостояниеСтатус</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаСостояние.Статус</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">100</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Left</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отправлен</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаСостояниеСтатус</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаСостояние.Статус</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">200</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Left</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Принят</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаСостояниеСтатус</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаСостояние.Статус</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">400</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Left</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отказ</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаСостояниеСтатус</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаСостояние.Статус</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">500</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Left</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ошибка</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаСостояниеСтатус</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаСостояние.Статус</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">10</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Left</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Создан</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаСостояниеСтатус</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаСостояние.Статус</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">20</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Left</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Подписан</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="СформироватьФормы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>1. Сформировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьФормы</Action>
+		</Command>
+		<Command name="ПодписатьФормы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>2. Подписать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписать формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодписатьФормы</Action>
+		</Command>
+		<Command name="РазослатьФормы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>3. Отправить сотруднику по email</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разослать формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РазослатьФормы</Action>
+		</Command>
+		<Command name="СохранитьФормы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить на диск (все)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьФормы</Action>
+		</Command>
+		<Command name="РедактироватьФормы" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактировать формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РедактироватьФормы</Action>
+		</Command>
+		<Command name="ЗаполнитьФормы" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьФормы</Action>
+		</Command>
+		<Command name="СохранитьФорму" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить на диск (текущий)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьФорму</Action>
+		</Command>
+	</Commands>
+</Form>
