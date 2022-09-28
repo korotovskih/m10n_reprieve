@@ -250,6 +250,20 @@
 											</ToolTip>
 											<CommandSource>Form</CommandSource>
 											<ExtendedTooltip name="КомандыФормыТаблицаСостояниеПраваяКПРасширеннаяПодсказка" id="52"/>
+											<ChildItems>
+												<Button name="ФормаСправка" id="126">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.StandardCommand.Help</CommandName>
+													<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+													<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="127"/>
+												</Button>
+												<Button name="ФормаИзменитьФорму" id="128">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+													<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+													<ExtendedTooltip name="ФормаИзменитьФормуРасширеннаяПодсказка" id="129"/>
+												</Button>
+											</ChildItems>
 										</Popup>
 										<Button name="ТаблицаСостояниеОбработкаМИтНастройкиЗаполненияНастройкиЗаполнения" id="101">
 											<Type>CommandBarButton</Type>
@@ -264,7 +278,6 @@
 						<Table name="ТаблицаСостояние" id="7">
 							<Representation>List</Representation>
 							<CommandBarLocation>None</CommandBarLocation>
-							<ReadOnly>true</ReadOnly>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
@@ -305,27 +318,25 @@
 								<ContextMenu name="ТаблицаСостояниеУправлениеПоискомКонтекстноеМеню" id="18"/>
 								<ExtendedTooltip name="ТаблицаСостояниеУправлениеПоискомРасширеннаяПодсказка" id="19"/>
 							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ТаблицаСостояниеВыбор</Event>
+								<Event name="BeforeAddRow">ТаблицаСостояниеПередНачаломДобавления</Event>
+								<Event name="BeforeDeleteRow">ТаблицаСостояниеПередУдалением</Event>
+							</Events>
 							<ChildItems>
 								<InputField name="ТаблицаСостояниеОрганизация" id="20">
 									<DataPath>ТаблицаСостояние.Организация</DataPath>
+									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТаблицаСостояниеОрганизацияКонтекстноеМеню" id="21"/>
 									<ExtendedTooltip name="ТаблицаСостояниеОрганизацияРасширеннаяПодсказка" id="22"/>
 								</InputField>
 								<InputField name="ТаблицаСостояниеСотрудник" id="103">
 									<DataPath>ТаблицаСостояние.Сотрудник</DataPath>
+									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТаблицаСостояниеСотрудникКонтекстноеМеню" id="104"/>
 									<ExtendedTooltip name="ТаблицаСостояниеСотрудникРасширеннаяПодсказка" id="105"/>
-								</InputField>
-								<InputField name="ТаблицаСостояниеПоиск" id="34">
-									<DataPath>ТаблицаСостояние.Поиск</DataPath>
-									<UserVisible>
-										<xr:Common>false</xr:Common>
-									</UserVisible>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ТаблицаСостояниеПоискКонтекстноеМеню" id="35"/>
-									<ExtendedTooltip name="ТаблицаСостояниеПоискРасширеннаяПодсказка" id="36"/>
 								</InputField>
 								<ColumnGroup name="ТаблицаСостояниеФорма" id="53">
 									<Title>
@@ -397,30 +408,6 @@
 											<ContextMenu name="ТаблицаСостояниеСотрудникСНИЛСКонтекстноеМеню" id="80"/>
 											<ExtendedTooltip name="ТаблицаСостояниеСотрудникСНИЛСРасширеннаяПодсказка" id="81"/>
 										</InputField>
-										<InputField name="ТаблицаСостояниеТекстПодтверждение" id="82">
-											<DataPath>ТаблицаСостояние.ТекстПодтверждение</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ТаблицаСостояниеТекстПодтверждениеКонтекстноеМеню" id="83"/>
-											<ExtendedTooltip name="ТаблицаСостояниеТекстПодтверждениеРасширеннаяПодсказка" id="84"/>
-										</InputField>
-										<InputField name="ТаблицаСостояниеТекстПредоставлениеПрава" id="85">
-											<DataPath>ТаблицаСостояние.ТекстПредоставлениеПрава</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ТаблицаСостояниеТекстПредоставлениеПраваКонтекстноеМеню" id="86"/>
-											<ExtendedTooltip name="ТаблицаСостояниеТекстПредоставлениеПраваРасширеннаяПодсказка" id="87"/>
-										</InputField>
-										<InputField name="ТаблицаСостояниеТекстПредупреждениеОбОтветсвенности" id="88">
-											<DataPath>ТаблицаСостояние.ТекстПредупреждениеОбОтветсвенности</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ТаблицаСостояниеТекстПредупреждениеОбОтветсвенностиКонтекстноеМеню" id="89"/>
-											<ExtendedTooltip name="ТаблицаСостояниеТекстПредупреждениеОбОтветсвенностиРасширеннаяПодсказка" id="90"/>
-										</InputField>
-										<InputField name="ТаблицаСостояниеТексПодписиГенДирИлиИспОрган" id="91">
-											<DataPath>ТаблицаСостояние.ТексПодписиГенДирИлиИспОрган</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ТаблицаСостояниеТексПодписиГенДирИлиИспОрганКонтекстноеМеню" id="92"/>
-											<ExtendedTooltip name="ТаблицаСостояниеТексПодписиГенДирИлиИспОрганРасширеннаяПодсказка" id="93"/>
-										</InputField>
 										<InputField name="ТаблицаСостояниеОрганизацияНаименование" id="94">
 											<DataPath>ТаблицаСостояние.ОрганизацияНаименование</DataPath>
 											<EditMode>EnterOnInput</EditMode>
@@ -430,6 +417,7 @@
 									</ChildItems>
 								</ColumnGroup>
 								<ColumnGroup name="ТаблицаСостояниеСтатусСостояние" id="110">
+									<ReadOnly>true</ReadOnly>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -449,6 +437,7 @@
 									<ChildItems>
 										<InputField name="ТаблицаСостояниеСтатус" id="26">
 											<DataPath>ТаблицаСостояние.Статус</DataPath>
+											<ReadOnly>true</ReadOnly>
 											<EditMode>EnterOnInput</EditMode>
 											<ShowInHeader>false</ShowInHeader>
 											<Width>10</Width>
@@ -458,6 +447,7 @@
 										</InputField>
 										<InputField name="ТаблицаСостояниеСостояние" id="29">
 											<DataPath>ТаблицаСостояние.Состояние</DataPath>
+											<ReadOnly>true</ReadOnly>
 											<EditMode>EnterOnInput</EditMode>
 											<ShowInHeader>false</ShowInHeader>
 											<Width>20</Width>
