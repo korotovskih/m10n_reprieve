@@ -1640,5 +1640,20 @@ IMjs/z0iwe7w6PEiIM7y9+Xx8uLuPSLD5e7w4+jl4uj3Ii8+DQoJCTwvz+7k7+jx
 			</ToolTip>
 			<Action>ПодписаниеДД</Action>
 		</Command>
+		<Command name="ЗаполнитьОписаниеПодтвержденияЕРП" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить описание подтверждения ЕРП</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить описание подтверждения ЕРП</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьОписаниеПодтвержденияЕРП</Action>
+		</Command>
 	</Commands>
 </Form>
