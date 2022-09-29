@@ -50,7 +50,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.МИтОсновнаяРоль</xr:Item>
 			</DefaultRoles>
 			<Vendor>https://github.com/korotovskih/m10n_reprieve</Vendor>
-			<Version>1.0.1</Version>
+			<Version>1.0.2</Version>
 			<BriefInformation/>
 			<DetailedInformation/>
 			<Copyright/>
@@ -66,6 +66,7 @@
 			<CommonModule>МИтКлиент</CommonModule>
 			<CommonModule>МИтКоннекторHTTP</CommonModule>
 			<CommonModule>МИтКС</CommonModule>
+			<CommonModule>МИтСеансПовтИсп</CommonModule>
 			<CommonModule>ПодключаемыеКомандыПереопределяемый</CommonModule>
 			<Catalog>Организации</Catalog>
 			<DataProcessor>МИтНастройкиЗаполнения</DataProcessor>
