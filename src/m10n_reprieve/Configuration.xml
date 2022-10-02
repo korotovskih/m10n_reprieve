@@ -50,7 +50,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.МИтОсновнаяРоль</xr:Item>
 			</DefaultRoles>
 			<Vendor>https://github.com/korotovskih/m10n_reprieve</Vendor>
-			<Version>1.0.2</Version>
+			<Version>1.1.0</Version>
 			<BriefInformation/>
 			<DetailedInformation/>
 			<Copyright/>
